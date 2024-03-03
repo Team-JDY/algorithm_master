@@ -1,4 +1,4 @@
-// 런타임 에러 
+// 조합구하는 것은 참고함 ㅠ 
 
 import Foundation
 
@@ -15,7 +15,7 @@ func solution(_ user_id:[String], _ banned_id:[String]) -> Int {
             if user_id[userIdx].count == banned_id[banIdx].count {
                 // 매핑할 수 있을 경우 저장
                 if canMapped(user_id[userIdx], banned_id[banIdx]) {
-                    indicesArr[banIdx].append(usrIdx)
+                    indicesArr[banIdx].append(userIdx)
                 }
             }
         }
